@@ -1,13 +1,12 @@
-:root { --teal: #3dccc7; --bg: #000; }
+:root { --teal: #3dccc7; }
 * { box-sizing: border-box; }
 html, body { margin: 0; background: #000; color: #fff; font-family: Arial, Helvetica, sans-serif; }
 a { color: inherit; text-decoration: none; }
 .header { display: flex; align-items: center; gap: 12px; padding: 18px 16px 8px; }
-.mark { width: 42px; height: 28px; display: flex; gap: 4px; align-items: center; }
+.mark { width: 42px; height: 28px; display: flex; gap: 4px; align-items: center; flex: none; }
 .mark span { display: block; width: 10px; background: var(--teal); border-radius: 8px; }
-.mark span:nth-child(1) { height: 16px; }
+.mark span:nth-child(1), .mark span:nth-child(3) { height: 16px; }
 .mark span:nth-child(2) { height: 26px; }
-.mark span:nth-child(3) { height: 16px; }
 .word { font-size: 22px; line-height: 1.15; font-weight: 500; }
 .burger { margin-left: auto; width: 28px; display: flex; flex-direction: column; gap: 5px; background: none; border: 0; padding: 6px 0; }
 .burger i { display: block; height: 2px; background: #fff; }
@@ -15,9 +14,11 @@ a { color: inherit; text-decoration: none; }
 .bag { width: 54px; margin: 0 auto; }
 .bag .handle { width: 22px; height: 14px; border: 3px solid var(--teal); border-bottom: 0; border-radius: 12px 12px 0 0; margin: 0 auto; }
 .bag .body { width: 46px; height: 40px; background: var(--teal); border-radius: 4px; margin: -2px auto 0; color: #063; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 18px; }
-.banner { padding: 22px 16px 8px; }
-.banner img { width: 100%; height: auto; display: block; }
 .nav-panel { display: none; background: #111; padding: 8px 18px 16px; }
 .nav-panel a { display: block; padding: 10px 0; border-bottom: 1px solid #222; }
 .nav-panel.open { display: block; }
+.banner { margin: 22px 16px; background: #050814; border: 1px solid #1a2744; min-height: 180px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.banner img { width: 100%; height: auto; display: block; }
+.flame { width: 100%; min-height: 190px; background: radial-gradient(circle at 35% 45%, #1d4e9a 0 18%, transparent 19%), radial-gradient(circle at 50% 50%, transparent 0 34%, #ff5a00 35%, #ffb000 42%, transparent 43%), radial-gradient(circle at 50% 50%, transparent 0 46%, #ff3b00 47%, #ff9a00 54%, transparent 55%); display: flex; align-items: flex-end; justify-content: flex-end; padding: 16px; }
+.flame span { font-size: 34px; font-weight: 700; letter-spacing: 2px; color: #f2c6ff; text-shadow: 0 0 12px #ff6a00; }
 .welcome { padding: 8px 18px 40px; color: #ddd; }
