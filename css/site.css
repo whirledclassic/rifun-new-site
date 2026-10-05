@@ -17,8 +17,7 @@ a { color: inherit; text-decoration: none; }
 .nav-panel { display: none; background: #111; padding: 8px 18px 16px; }
 .nav-panel a { display: block; padding: 10px 0; border-bottom: 1px solid #222; }
 .nav-panel.open { display: block; }
-.banner { margin: 22px 16px; background: #050814; border: 1px solid #1a2744; min-height: 180px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-.banner img { width: 100%; height: auto; display: block; }
-.flame { width: 100%; min-height: 190px; background: radial-gradient(circle at 35% 45%, #1d4e9a 0 18%, transparent 19%), radial-gradient(circle at 50% 50%, transparent 0 34%, #ff5a00 35%, #ffb000 42%, transparent 43%), radial-gradient(circle at 50% 50%, transparent 0 46%, #ff3b00 47%, #ff9a00 54%, transparent 55%); display: flex; align-items: flex-end; justify-content: flex-end; padding: 16px; }
-.flame span { font-size: 34px; font-weight: 700; letter-spacing: 2px; color: #f2c6ff; text-shadow: 0 0 12px #ff6a00; }
+.banner { margin: 22px 16px; }
+.flame { min-height: 180px; background: #071433; display: flex; align-items: center; justify-content: flex-end; padding: 18px 22px; box-shadow: inset 0 0 40px #ff5a00; }
+.flame b { font-size: 34px; line-height: 1; font-weight: 700; color: #d7b6ff; text-shadow: 0 0 10px #ff6a00; }
 .welcome { padding: 8px 18px 40px; color: #ddd; }
